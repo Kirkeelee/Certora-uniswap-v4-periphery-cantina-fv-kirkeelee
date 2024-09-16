@@ -90,3 +90,61 @@ rule lockerDoesntChange(method f, env e, calldataarg args) {
 
     assert newLocker == locker;
 }
+
+// minting changes increments tokenID, "!=" is used instead of "<" because of max_uint256 overflow.
+rule MintingIncrementstokenId (env e) {
+
+    PositionManagerHarness.PoolKey poolKey;
+    int24 tickLower;
+    int24 tickUpper;
+    uint256 liquidity;
+    uint128 amount0Max;
+    uint128 amount1Max;
+    address owner;
+    bytes hookData;
+    uint256 tokenIdBefore = getNextTokenId(e);
+
+    mintPosition(e, poolKey, tickLower, tickUpper, liquidity, amount0Max, amount1Max, owner, hookData);
+
+    uint256 tokenIdAfter = getNextTokenId(e);
+
+    assert tokenIdBefore != tokenIdAfter;
+
+}
+
+// no function should change the tokenId except minting.
+rule onlyMintingchangesTokenID (method f, env e, calldataarg args) filtered {
+    f -> f.selector != sig:mintPosition(Conversions.PoolKey, int24, int24, uint256, uint128, uint128, address, bytes).selector }{
+    
+    uint256 tokenIdBefore = getNextTokenId(e);
+
+    f(e,args);
+
+    uint256 tokenIdAfter = getNextTokenId(e);
+
+    assert tokenIdBefore == tokenIdAfter;
+
+}
+
+//Effects of burn
+
+rule BurnEffects (env e) {
+
+    uint256 tokenId; uint128 amount0Min; uint128 amount1Min; bytes hookData;
+    PositionManagerHarness.PoolKey poolKey; PositionManagerHarness.PositionInfo info;
+    //uint128 liquidityBefore = getPositionLiquidity(e, tokenId); 
+    //require liquidityBefore !=0;
+
+
+    burnPosition(e, tokenId, amount0Min, amount1Min, hookData);
+
+    (poolKey, info) = getPoolAndPositionInfo(tokenId);
+
+    //uint128 liquidityAfter = getPositionLiquidity(e, tokenId); 
+
+    //assert liquidityAfter < liquidityBefore;
+
+    assert info ==0;
+
+
+}

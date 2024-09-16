@@ -1,0 +1,34 @@
+{
+    "importFilesToOrigRelpaths": {
+        "certora/specs/ERC20/erc20cvl.spec": "certora/specs/ERC20/erc20cvl.spec",
+        "certora/specs/setup/Conversions.spec": "certora/specs/setup/Conversions.spec",
+        "certora/specs/setup/Deltas.spec": "certora/specs/setup/Deltas.spec",
+        "certora/specs/setup/EIP712.spec": "certora/specs/setup/EIP712.spec",
+        "certora/specs/setup/PoolManager.spec": "certora/specs/setup/PoolManager.spec",
+        "certora/specs/setup/PoolManagerBase.spec": "certora/specs/setup/PoolManagerBase.spec",
+        "certora/specs/setup/SafeTransferLibCVL.spec": "certora/specs/setup/SafeTransferLibCVL.spec"
+    },
+    "primary_contract": "PositionManagerHarness",
+    "specfile": "certora/specs/PositionManager.spec",
+    "specfileOrigRelpath": "certora/specs/PositionManager.spec",
+    "specfilesToImportDecls": {
+        "certora/specs/PositionManager.spec": [
+            "./setup/EIP712.spec",
+            "./setup/SafeTransferLibCVL.spec",
+            "./setup/Deltas.spec",
+            "./setup/PoolManager.spec"
+        ],
+        "certora/specs/setup/Deltas.spec": [
+            "Conversions.spec"
+        ],
+        "certora/specs/setup/PoolManager.spec": [
+            "../ERC20/erc20cvl.spec",
+            "./PoolManagerBase.spec",
+            "./Deltas.spec"
+        ],
+        "certora/specs/setup/SafeTransferLibCVL.spec": [
+            "../ERC20/erc20cvl.spec"
+        ]
+    },
+    "type": "spec"
+}
