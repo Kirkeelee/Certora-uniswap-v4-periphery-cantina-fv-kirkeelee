@@ -1,0 +1,204 @@
+Saving last configuration file to .certora_internal/24_09_23_14_13_36_737/run.conf
+There is no TAC file. Going to script EVMVerifier/certoraBuild.py to main_with_args()
+Creating dir /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737/.certora_config
+In /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/PositionManager.spec, found the imports: [('./setup/SafeTransferLibCVL.spec', '1:1'), ('./setup/Deltas.spec', '2:2'), ('./setup/EIP712.spec', '3:2'), ('./setup/PoolManager.spec', '4:2')]
+In /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/setup/SafeTransferLibCVL.spec, found the imports: [('../ERC20/erc20cvl.spec', '1:1')]
+In /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/ERC20/erc20cvl.spec, found the imports: []
+In /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/setup/Deltas.spec, found the imports: [('Conversions.spec', '3:2')]
+In /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/setup/Conversions.spec, found the imports: []
+In /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/setup/EIP712.spec, found the imports: []
+In /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/setup/PoolManager.spec, found the imports: [('./Deltas.spec', '3:2'), ('./PoolManagerBase.spec', '4:2'), ('../ERC20/erc20cvl.spec', '5:2')]
+In /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/setup/Deltas.spec, found the imports: [('Conversions.spec', '3:2')]
+In /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/setup/Conversions.spec, found the imports: []
+In /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/setup/PoolManagerBase.spec, found the imports: []
+In /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/ERC20/erc20cvl.spec, found the imports: []
+copying spec file /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/PositionManager.spec to /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737/.certora_sources/.0_PositionManager.spec.spec
+writing /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737/.certora_verify.json
+running ['java', '-jar', '/home/zemmli/.local/lib/python3.12/site-packages/certora_jars/Typechecker.jar', '-buildDirectory', '/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737']
+main build cache key computed based on {'files': ['certora/harnesses/AllowanceTransferMock.sol', 'certora/harnesses/Conversions.sol', 'certora/harnesses/FallbackCaller.sol', 'certora/harnesses/PositionManagerHarness.sol'], 'link': ['PositionManagerHarness:permit2=AllowanceTransferMock'], 'package_version_for_build_cache': 'certora-cli 7.14.2', 'packages': ['@uniswap/v4-core=lib/v4-core', 'openzeppelin-contracts=lib/v4-core/lib/openzeppelin-contracts', 'permit2=lib/permit2', 'solmate=lib/v4-core/lib/solmate'], 'packages_path': '/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/node_modules', 'solc': 'solc', 'solc_allow_path': '.', 'solc_evm_version': 'cancun', 'solc_optimize': '1000000', 'solc_via_ir': True}
+Current sub build cache key computed for .certora_internal/build_cache/cc83279c6bf20cd8cbc3727da4db228044391787f34aab2c35903f09b7aa0ba6/0fe37a47b7b8c3c6cc664fa336709777c2a24587008ebdaccf2297f592533ccb.file_list.json is a miss
+Current sub build cache key computed for .certora_internal/build_cache/cc83279c6bf20cd8cbc3727da4db228044391787f34aab2c35903f09b7aa0ba6/e3a3ac826088cc8b2c7e13cc2df3c223e3ac32ba4da450f9c4681ddad123e198.file_list.json is a miss
+Current sub build cache key computed for .certora_internal/build_cache/cc83279c6bf20cd8cbc3727da4db228044391787f34aab2c35903f09b7aa0ba6/75e3f49cc122a62792dd2bd02d7f2fcf435b7b2444e63e0fcc4868bca1dbe640.file_list.json is a miss
+Current sub build cache key computed for .certora_internal/build_cache/cc83279c6bf20cd8cbc3727da4db228044391787f34aab2c35903f09b7aa0ba6/9e0f9bc876d35192314a8cf9fcecd400b2ec69768d0d27883ddcdf286d32ad66.file_list.json is a miss
+Current sub build cache key computed for .certora_internal/build_cache/cc83279c6bf20cd8cbc3727da4db228044391787f34aab2c35903f09b7aa0ba6/3130109ac968a04b7184e87656e42f49c196d6f79f865251f6dba1096a612808.file_list.json is a miss
+All sub-cache-key file list files missed, cache miss on build cache key cc83279c6bf20cd8cbc3727da4db228044391787f34aab2c35903f09b7aa0ba6
+
+building file certora/harnesses/AllowanceTransferMock.sol
+Running cmd solc --version
+stdout, stderr = .certora_internal/24_09_23_14_13_36_737/.certora_config/version_check_solc.stdout, .certora_internal/24_09_23_14_13_36_737/.certora_config/version_check_solc.stderr
+Exitcode 0
+Solc run solc --version time: 0.1357
+Running cmd solc -o ".certora_internal/24_09_23_14_13_36_737/.certora_config/AllowanceTransferMock.sol_0/" --overwrite --allow-paths ".",.,"lib/v4-core","lib/v4-core/lib/openzeppelin-contracts","lib/permit2","lib/v4-core/lib/solmate" --standard-json
+stdout, stderr = .certora_internal/24_09_23_14_13_36_737/.certora_config/AllowanceTransferMock.sol_0.standard.stdout.json, .certora_internal/24_09_23_14_13_36_737/.certora_config/AllowanceTransferMock.sol_0.standard.stderr.json
+Exitcode 0
+Solc run solc -o ".certora_internal/24_09_23_14_13_36_737/.certora_config/AllowanceTransferMock.sol_0/" --overwrite --allow-paths ".",.,"lib/v4-core","lib/v4-core/lib/openzeppelin-contracts","lib/permit2","lib/v4-core/lib/solmate" --standard-json time: 0.2418
+reading standard json data from .certora_internal/24_09_23_14_13_36_737/.certora_config/AllowanceTransferMock.sol_0.standard.stdout.json
+collecting worklist for /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/harnesses/AllowanceTransferMock.sol
+Processing dependencies from file /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/harnesses/AllowanceTransferMock.sol
+available keys: dict_keys(['/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/harnesses/AllowanceTransferMock.sol', 'lib/permit2/src/interfaces/IAllowanceTransfer.sol', 'lib/permit2/src/interfaces/IEIP712.sol', 'lib/v4-core/lib/solmate/src/tokens/ERC20.sol', 'lib/v4-core/lib/solmate/src/utils/SafeTransferLib.sol'])
+Adding internal link ref /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/lib/v4-core/lib/solmate/src/utils/SafeTransferLib.sol to worklist
+Processing dependencies from file /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/lib/v4-core/lib/solmate/src/utils/SafeTransferLib.sol
+available keys: dict_keys(['/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/harnesses/AllowanceTransferMock.sol', 'lib/permit2/src/interfaces/IAllowanceTransfer.sol', 'lib/permit2/src/interfaces/IEIP712.sol', 'lib/v4-core/lib/solmate/src/tokens/ERC20.sol', 'lib/v4-core/lib/solmate/src/utils/SafeTransferLib.sol'])
+Contracts in AllowanceTransferMock.sol_0 (file certora/harnesses/AllowanceTransferMock.sol): ['AllowanceTransferMock', 'IAllowanceTransferMock']
+Contracts with their chosen addresses: [(274184521717934524641157099916833587200, '/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/harnesses/AllowanceTransferMock.sol:AllowanceTransferMock'), (274184521717934524641157099916833587201, '/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/harnesses/AllowanceTransferMock.sol:IAllowanceTransferMock'), (274184521717934524641157099916833587202, 'lib/v4-core/lib/solmate/src/utils/SafeTransferLib.sol:SafeTransferLib')]
+Working on contract AllowanceTransferMock
+Working on contract AllowanceTransferMock
+Working on contract IAllowanceTransferMock
+Working on contract IAllowanceTransferMock
+Working on contract SafeTransferLib
+Working on contract SafeTransferLib
+For contracts of primary AllowanceTransferMock
+finding primary contract address of /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/harnesses/AllowanceTransferMock.sol:AllowanceTransferMock in [(274184521717934524641157099916833587200, '/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/harnesses/AllowanceTransferMock.sol:AllowanceTransferMock'), (274184521717934524641157099916833587201, '/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/harnesses/AllowanceTransferMock.sol:IAllowanceTransferMock'), (274184521717934524641157099916833587202, 'lib/v4-core/lib/solmate/src/utils/SafeTransferLib.sol:SafeTransferLib')]
+Contracts in SDC AllowanceTransferMock.sol_0: ['AllowanceTransferMock', 'IAllowanceTransferMock', 'SafeTransferLib']
+Building source tree
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/lib/permit2/src/interfaces/IEIP712.sol to .certora_internal/24_09_23_14_13_36_737/.certora_sources/lib/permit2/src/interfaces/IEIP712.sol
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/lib/permit2/src/interfaces/IAllowanceTransfer.sol to .certora_internal/24_09_23_14_13_36_737/.certora_sources/lib/permit2/src/interfaces/IAllowanceTransfer.sol
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/ERC20/erc20cvl.spec to .certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/specs/ERC20/erc20cvl.spec
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/PositionManager.spec to .certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/specs/PositionManager.spec
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/harnesses/AllowanceTransferMock.sol to .certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/harnesses/AllowanceTransferMock.sol
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/lib/v4-core/lib/solmate/src/tokens/ERC20.sol to .certora_internal/24_09_23_14_13_36_737/.certora_sources/lib/v4-core/lib/solmate/src/tokens/ERC20.sol
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/setup/PoolManagerBase.spec to .certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/specs/setup/PoolManagerBase.spec
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/setup/EIP712.spec to .certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/specs/setup/EIP712.spec
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/confs/PositionManager.conf to .certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/confs/PositionManager.conf
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/setup/Deltas.spec to .certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/specs/setup/Deltas.spec
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/setup/SafeTransferLibCVL.spec to .certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/specs/setup/SafeTransferLibCVL.spec
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/remappings.txt to .certora_internal/24_09_23_14_13_36_737/.certora_sources/remappings.txt
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/setup/Conversions.spec to .certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/specs/setup/Conversions.spec
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/setup/PoolManager.spec to .certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/specs/setup/PoolManager.spec
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/lib/v4-core/lib/solmate/src/utils/SafeTransferLib.sol to .certora_internal/24_09_23_14_13_36_737/.certora_sources/lib/v4-core/lib/solmate/src/utils/SafeTransferLib.sol
+Backing up current .certora_sources to .certora_internal/24_09_23_14_13_36_737/.certora_sources/.pre_autofinders.0
+Running cmd solc -o ".certora_internal/24_09_23_14_13_36_737/.certora_config/AllowanceTransferMock.sol_0/" --overwrite --allow-paths "/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737/.certora_sources",.,"lib/v4-core","lib/v4-core/lib/openzeppelin-contracts","lib/permit2","lib/v4-core/lib/solmate" --standard-json
+stdout, stderr = .certora_internal/24_09_23_14_13_36_737/.certora_config/AllowanceTransferMock.sol_0.standard.stdout.json, .certora_internal/24_09_23_14_13_36_737/.certora_config/AllowanceTransferMock.sol_0.standard.stderr.json
+Exitcode 0
+Solc run solc -o ".certora_internal/24_09_23_14_13_36_737/.certora_config/AllowanceTransferMock.sol_0/" --overwrite --allow-paths "/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737/.certora_sources",.,"lib/v4-core","lib/v4-core/lib/openzeppelin-contracts","lib/permit2","lib/v4-core/lib/solmate" --standard-json time: 0.2037
+reading standard json data from .certora_internal/24_09_23_14_13_36_737/.certora_config/AllowanceTransferMock.sol_0.standard.stdout.json
+collecting worklist for /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/harnesses/AllowanceTransferMock.sol
+Processing dependencies from file /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/harnesses/AllowanceTransferMock.sol
+available keys: dict_keys(['/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/harnesses/AllowanceTransferMock.sol', 'lib/permit2/src/interfaces/IAllowanceTransfer.sol', 'lib/permit2/src/interfaces/IEIP712.sol', 'lib/v4-core/lib/solmate/src/tokens/ERC20.sol', 'lib/v4-core/lib/solmate/src/utils/SafeTransferLib.sol'])
+Adding internal link ref /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/lib/v4-core/lib/solmate/src/utils/SafeTransferLib.sol to worklist
+Processing dependencies from file /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/lib/v4-core/lib/solmate/src/utils/SafeTransferLib.sol
+available keys: dict_keys(['/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/harnesses/AllowanceTransferMock.sol', 'lib/permit2/src/interfaces/IAllowanceTransfer.sol', 'lib/permit2/src/interfaces/IEIP712.sol', 'lib/v4-core/lib/solmate/src/tokens/ERC20.sol', 'lib/v4-core/lib/solmate/src/utils/SafeTransferLib.sol'])
+Contracts in AllowanceTransferMock.sol_0 (file .certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/harnesses/AllowanceTransferMock.sol): ['AllowanceTransferMock', 'IAllowanceTransferMock']
+Contracts with their chosen addresses: [(274184521717934524641157099916833587203, '/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/harnesses/AllowanceTransferMock.sol:AllowanceTransferMock'), (274184521717934524641157099916833587204, '/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/harnesses/AllowanceTransferMock.sol:IAllowanceTransferMock'), (274184521717934524641157099916833587205, 'lib/v4-core/lib/solmate/src/utils/SafeTransferLib.sol:SafeTransferLib')]
+Working on contract AllowanceTransferMock
+Working on contract AllowanceTransferMock
+Working on contract IAllowanceTransferMock
+Working on contract IAllowanceTransferMock
+Working on contract SafeTransferLib
+Working on contract SafeTransferLib
+For contracts of primary AllowanceTransferMock
+finding primary contract address of /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/harnesses/AllowanceTransferMock.sol:AllowanceTransferMock in [(274184521717934524641157099916833587203, '/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/harnesses/AllowanceTransferMock.sol:AllowanceTransferMock'), (274184521717934524641157099916833587204, '/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/harnesses/AllowanceTransferMock.sol:IAllowanceTransferMock'), (274184521717934524641157099916833587205, 'lib/v4-core/lib/solmate/src/utils/SafeTransferLib.sol:SafeTransferLib')]
+Contracts in SDC AllowanceTransferMock.sol_0: ['AllowanceTransferMock', 'IAllowanceTransferMock', 'SafeTransferLib']
+Backing up instrumented .certora_sources to .certora_internal/24_09_23_14_13_36_737/.certora_sources/.post_autofinders.0
+Rolling back .certora_sources to .certora_internal/24_09_23_14_13_36_737/.certora_sources/.pre_autofinders.0 version
+Libraries to add = []
+
+building file certora/harnesses/Conversions.sol
+Running cmd solc -o ".certora_internal/24_09_23_14_13_36_737/.certora_config/Conversions.sol_1/" --overwrite --allow-paths ".",.,"lib/v4-core","lib/v4-core/lib/openzeppelin-contracts","lib/permit2","lib/v4-core/lib/solmate" --standard-json
+stdout, stderr = .certora_internal/24_09_23_14_13_36_737/.certora_config/Conversions.sol_1.standard.stdout.json, .certora_internal/24_09_23_14_13_36_737/.certora_config/Conversions.sol_1.standard.stderr.json
+Exitcode 0
+Solc run solc -o ".certora_internal/24_09_23_14_13_36_737/.certora_config/Conversions.sol_1/" --overwrite --allow-paths ".",.,"lib/v4-core","lib/v4-core/lib/openzeppelin-contracts","lib/permit2","lib/v4-core/lib/solmate" --standard-json time: 0.2053
+reading standard json data from .certora_internal/24_09_23_14_13_36_737/.certora_config/Conversions.sol_1.standard.stdout.json
+collecting worklist for /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/harnesses/Conversions.sol
+Processing dependencies from file /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/harnesses/Conversions.sol
+available keys: dict_keys(['/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/harnesses/Conversions.sol', 'lib/v4-core/src/interfaces/IExtsload.sol', 'lib/v4-core/src/interfaces/IExttload.sol', 'lib/v4-core/src/interfaces/IHooks.sol', 'lib/v4-core/src/interfaces/IPoolManager.sol', 'lib/v4-core/src/interfaces/IProtocolFeeController.sol', 'lib/v4-core/src/interfaces/IProtocolFees.sol', 'lib/v4-core/src/interfaces/external/IERC20Minimal.sol', 'lib/v4-core/src/interfaces/external/IERC6909Claims.sol', 'lib/v4-core/src/libraries/CustomRevert.sol', 'lib/v4-core/src/libraries/SafeCast.sol', 'lib/v4-core/src/types/BalanceDelta.sol', 'lib/v4-core/src/types/BeforeSwapDelta.sol', 'lib/v4-core/src/types/Currency.sol', 'lib/v4-core/src/types/PoolId.sol', 'src/libraries/PositionConfig.sol'])
+Adding internal link ref /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/lib/v4-core/src/types/BalanceDelta.sol to worklist
+Processing dependencies from file /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/lib/v4-core/src/types/BalanceDelta.sol
+available keys: dict_keys(['/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/harnesses/Conversions.sol', 'lib/v4-core/src/interfaces/IExtsload.sol', 'lib/v4-core/src/interfaces/IExttload.sol', 'lib/v4-core/src/interfaces/IHooks.sol', 'lib/v4-core/src/interfaces/IPoolManager.sol', 'lib/v4-core/src/interfaces/IProtocolFeeController.sol', 'lib/v4-core/src/interfaces/IProtocolFees.sol', 'lib/v4-core/src/interfaces/external/IERC20Minimal.sol', 'lib/v4-core/src/interfaces/external/IERC6909Claims.sol', 'lib/v4-core/src/libraries/CustomRevert.sol', 'lib/v4-core/src/libraries/SafeCast.sol', 'lib/v4-core/src/types/BalanceDelta.sol', 'lib/v4-core/src/types/BeforeSwapDelta.sol', 'lib/v4-core/src/types/Currency.sol', 'lib/v4-core/src/types/PoolId.sol', 'src/libraries/PositionConfig.sol'])
+Contracts in Conversions.sol_1 (file certora/harnesses/Conversions.sol): ['Conversions']
+Contracts with their chosen addresses: [(274184521717934524641157099916833587206, '/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/harnesses/Conversions.sol:Conversions'), (274184521717934524641157099916833587207, 'lib/v4-core/src/types/BalanceDelta.sol:BalanceDeltaLibrary')]
+Working on contract Conversions
+Working on contract Conversions
+Working on contract BalanceDeltaLibrary
+Working on contract BalanceDeltaLibrary
+For contracts of primary Conversions
+finding primary contract address of /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/harnesses/Conversions.sol:Conversions in [(274184521717934524641157099916833587206, '/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/harnesses/Conversions.sol:Conversions'), (274184521717934524641157099916833587207, 'lib/v4-core/src/types/BalanceDelta.sol:BalanceDeltaLibrary')]
+Contracts in SDC Conversions.sol_1: ['Conversions', 'BalanceDeltaLibrary']
+Building source tree
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/lib/v4-core/src/interfaces/external/IERC20Minimal.sol to .certora_internal/24_09_23_14_13_36_737/.certora_sources/lib/v4-core/src/interfaces/external/IERC20Minimal.sol
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/lib/v4-core/src/types/Currency.sol to .certora_internal/24_09_23_14_13_36_737/.certora_sources/lib/v4-core/src/types/Currency.sol
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/lib/v4-core/src/types/PoolId.sol to .certora_internal/24_09_23_14_13_36_737/.certora_sources/lib/v4-core/src/types/PoolId.sol
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/lib/v4-core/src/libraries/CustomRevert.sol to .certora_internal/24_09_23_14_13_36_737/.certora_sources/lib/v4-core/src/libraries/CustomRevert.sol
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/lib/v4-core/src/interfaces/IHooks.sol to .certora_internal/24_09_23_14_13_36_737/.certora_sources/lib/v4-core/src/interfaces/IHooks.sol
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/lib/v4-core/src/types/BeforeSwapDelta.sol to .certora_internal/24_09_23_14_13_36_737/.certora_sources/lib/v4-core/src/types/BeforeSwapDelta.sol
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/lib/v4-core/src/types/PoolKey.sol to .certora_internal/24_09_23_14_13_36_737/.certora_sources/lib/v4-core/src/types/PoolKey.sol
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/lib/v4-core/src/interfaces/IProtocolFees.sol to .certora_internal/24_09_23_14_13_36_737/.certora_sources/lib/v4-core/src/interfaces/IProtocolFees.sol
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/lib/v4-core/src/types/BalanceDelta.sol to .certora_internal/24_09_23_14_13_36_737/.certora_sources/lib/v4-core/src/types/BalanceDelta.sol
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/lib/v4-core/src/interfaces/IExtsload.sol to .certora_internal/24_09_23_14_13_36_737/.certora_sources/lib/v4-core/src/interfaces/IExtsload.sol
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/lib/v4-core/src/interfaces/IExttload.sol to .certora_internal/24_09_23_14_13_36_737/.certora_sources/lib/v4-core/src/interfaces/IExttload.sol
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/lib/v4-core/src/interfaces/IPoolManager.sol to .certora_internal/24_09_23_14_13_36_737/.certora_sources/lib/v4-core/src/interfaces/IPoolManager.sol
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/lib/v4-core/src/interfaces/IProtocolFeeController.sol to .certora_internal/24_09_23_14_13_36_737/.certora_sources/lib/v4-core/src/interfaces/IProtocolFeeController.sol
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/src/libraries/PositionConfig.sol to .certora_internal/24_09_23_14_13_36_737/.certora_sources/src/libraries/PositionConfig.sol
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/lib/v4-core/src/interfaces/external/IERC6909Claims.sol to .certora_internal/24_09_23_14_13_36_737/.certora_sources/lib/v4-core/src/interfaces/external/IERC6909Claims.sol
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/harnesses/Conversions.sol to .certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/harnesses/Conversions.sol
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/lib/v4-core/src/libraries/SafeCast.sol to .certora_internal/24_09_23_14_13_36_737/.certora_sources/lib/v4-core/src/libraries/SafeCast.sol
+Backing up current .certora_sources to .certora_internal/24_09_23_14_13_36_737/.certora_sources/.pre_autofinders.1
+Running cmd solc -o ".certora_internal/24_09_23_14_13_36_737/.certora_config/Conversions.sol_1/" --overwrite --allow-paths "/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737/.certora_sources",.,"lib/v4-core","lib/v4-core/lib/openzeppelin-contracts","lib/permit2","lib/v4-core/lib/solmate" --standard-json
+stdout, stderr = .certora_internal/24_09_23_14_13_36_737/.certora_config/Conversions.sol_1.standard.stdout.json, .certora_internal/24_09_23_14_13_36_737/.certora_config/Conversions.sol_1.standard.stderr.json
+Exitcode 0
+Solc run solc -o ".certora_internal/24_09_23_14_13_36_737/.certora_config/Conversions.sol_1/" --overwrite --allow-paths "/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737/.certora_sources",.,"lib/v4-core","lib/v4-core/lib/openzeppelin-contracts","lib/permit2","lib/v4-core/lib/solmate" --standard-json time: 0.2193
+reading standard json data from .certora_internal/24_09_23_14_13_36_737/.certora_config/Conversions.sol_1.standard.stdout.json
+collecting worklist for /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/harnesses/Conversions.sol
+Processing dependencies from file /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/harnesses/Conversions.sol
+available keys: dict_keys(['/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/harnesses/Conversions.sol', 'lib/v4-core/src/interfaces/IExtsload.sol', 'lib/v4-core/src/interfaces/IExttload.sol', 'lib/v4-core/src/interfaces/IHooks.sol', 'lib/v4-core/src/interfaces/IPoolManager.sol', 'lib/v4-core/src/interfaces/IProtocolFeeController.sol', 'lib/v4-core/src/interfaces/IProtocolFees.sol', 'lib/v4-core/src/interfaces/external/IERC20Minimal.sol', 'lib/v4-core/src/interfaces/external/IERC6909Claims.sol', 'lib/v4-core/src/libraries/CustomRevert.sol', 'lib/v4-core/src/libraries/SafeCast.sol', 'lib/v4-core/src/types/BalanceDelta.sol', 'lib/v4-core/src/types/BeforeSwapDelta.sol', 'lib/v4-core/src/types/Currency.sol', 'lib/v4-core/src/types/PoolId.sol', 'src/libraries/PositionConfig.sol'])
+Adding internal link ref /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/lib/v4-core/src/types/BalanceDelta.sol to worklist
+Processing dependencies from file /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/lib/v4-core/src/types/BalanceDelta.sol
+available keys: dict_keys(['/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/harnesses/Conversions.sol', 'lib/v4-core/src/interfaces/IExtsload.sol', 'lib/v4-core/src/interfaces/IExttload.sol', 'lib/v4-core/src/interfaces/IHooks.sol', 'lib/v4-core/src/interfaces/IPoolManager.sol', 'lib/v4-core/src/interfaces/IProtocolFeeController.sol', 'lib/v4-core/src/interfaces/IProtocolFees.sol', 'lib/v4-core/src/interfaces/external/IERC20Minimal.sol', 'lib/v4-core/src/interfaces/external/IERC6909Claims.sol', 'lib/v4-core/src/libraries/CustomRevert.sol', 'lib/v4-core/src/libraries/SafeCast.sol', 'lib/v4-core/src/types/BalanceDelta.sol', 'lib/v4-core/src/types/BeforeSwapDelta.sol', 'lib/v4-core/src/types/Currency.sol', 'lib/v4-core/src/types/PoolId.sol', 'src/libraries/PositionConfig.sol'])
+Contracts in Conversions.sol_1 (file .certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/harnesses/Conversions.sol): ['Conversions']
+Contracts with their chosen addresses: [(274184521717934524641157099916833587208, '/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/harnesses/Conversions.sol:Conversions'), (274184521717934524641157099916833587209, 'lib/v4-core/src/types/BalanceDelta.sol:BalanceDeltaLibrary')]
+Working on contract Conversions
+Working on contract Conversions
+Working on contract BalanceDeltaLibrary
+Working on contract BalanceDeltaLibrary
+For contracts of primary Conversions
+finding primary contract address of /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/harnesses/Conversions.sol:Conversions in [(274184521717934524641157099916833587208, '/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/harnesses/Conversions.sol:Conversions'), (274184521717934524641157099916833587209, 'lib/v4-core/src/types/BalanceDelta.sol:BalanceDeltaLibrary')]
+Contracts in SDC Conversions.sol_1: ['Conversions', 'BalanceDeltaLibrary']
+Backing up instrumented .certora_sources to .certora_internal/24_09_23_14_13_36_737/.certora_sources/.post_autofinders.1
+Rolling back .certora_sources to .certora_internal/24_09_23_14_13_36_737/.certora_sources/.pre_autofinders.1 version
+Libraries to add = []
+
+building file certora/harnesses/FallbackCaller.sol
+Running cmd solc -o ".certora_internal/24_09_23_14_13_36_737/.certora_config/FallbackCaller.sol_2/" --overwrite --allow-paths ".",.,"lib/v4-core","lib/v4-core/lib/openzeppelin-contracts","lib/permit2","lib/v4-core/lib/solmate" --standard-json
+stdout, stderr = .certora_internal/24_09_23_14_13_36_737/.certora_config/FallbackCaller.sol_2.standard.stdout.json, .certora_internal/24_09_23_14_13_36_737/.certora_config/FallbackCaller.sol_2.standard.stderr.json
+Exitcode 0
+Solc run solc -o ".certora_internal/24_09_23_14_13_36_737/.certora_config/FallbackCaller.sol_2/" --overwrite --allow-paths ".",.,"lib/v4-core","lib/v4-core/lib/openzeppelin-contracts","lib/permit2","lib/v4-core/lib/solmate" --standard-json time: 0.0875
+reading standard json data from .certora_internal/24_09_23_14_13_36_737/.certora_config/FallbackCaller.sol_2.standard.stdout.json
+collecting worklist for /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/harnesses/FallbackCaller.sol
+Processing dependencies from file /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/harnesses/FallbackCaller.sol
+available keys: dict_keys(['/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/harnesses/FallbackCaller.sol'])
+Contracts in FallbackCaller.sol_2 (file certora/harnesses/FallbackCaller.sol): ['FallbackCaller']
+Contracts with their chosen addresses: [(274184521717934524641157099916833587210, '/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/harnesses/FallbackCaller.sol:FallbackCaller')]
+Working on contract FallbackCaller
+Working on contract FallbackCaller
+For contracts of primary FallbackCaller
+finding primary contract address of /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/harnesses/FallbackCaller.sol:FallbackCaller in [(274184521717934524641157099916833587210, '/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/harnesses/FallbackCaller.sol:FallbackCaller')]
+Contracts in SDC FallbackCaller.sol_2: ['FallbackCaller']
+Building source tree
+Copying /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/harnesses/FallbackCaller.sol to .certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/harnesses/FallbackCaller.sol
+Backing up current .certora_sources to .certora_internal/24_09_23_14_13_36_737/.certora_sources/.pre_autofinders.2
+Running cmd solc -o ".certora_internal/24_09_23_14_13_36_737/.certora_config/FallbackCaller.sol_2/" --overwrite --allow-paths "/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737/.certora_sources",.,"lib/v4-core","lib/v4-core/lib/openzeppelin-contracts","lib/permit2","lib/v4-core/lib/solmate" --standard-json
+stdout, stderr = .certora_internal/24_09_23_14_13_36_737/.certora_config/FallbackCaller.sol_2.standard.stdout.json, .certora_internal/24_09_23_14_13_36_737/.certora_config/FallbackCaller.sol_2.standard.stderr.json
+Exitcode 0
+Solc run solc -o ".certora_internal/24_09_23_14_13_36_737/.certora_config/FallbackCaller.sol_2/" --overwrite --allow-paths "/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737/.certora_sources",.,"lib/v4-core","lib/v4-core/lib/openzeppelin-contracts","lib/permit2","lib/v4-core/lib/solmate" --standard-json time: 0.0888
+reading standard json data from .certora_internal/24_09_23_14_13_36_737/.certora_config/FallbackCaller.sol_2.standard.stdout.json
+collecting worklist for /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/harnesses/FallbackCaller.sol
+Processing dependencies from file /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/harnesses/FallbackCaller.sol
+available keys: dict_keys(['/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/harnesses/FallbackCaller.sol'])
+Contracts in FallbackCaller.sol_2 (file .certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/harnesses/FallbackCaller.sol): ['FallbackCaller']
+Contracts with their chosen addresses: [(274184521717934524641157099916833587211, '/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/harnesses/FallbackCaller.sol:FallbackCaller')]
+Working on contract FallbackCaller
+Working on contract FallbackCaller
+For contracts of primary FallbackCaller
+finding primary contract address of /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/harnesses/FallbackCaller.sol:FallbackCaller in [(274184521717934524641157099916833587211, '/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_23_14_13_36_737/.certora_sources/certora/harnesses/FallbackCaller.sol:FallbackCaller')]
+Contracts in SDC FallbackCaller.sol_2: ['FallbackCaller']
+Backing up instrumented .certora_sources to .certora_internal/24_09_23_14_13_36_737/.certora_sources/.post_autofinders.2
+Rolling back .certora_sources to .certora_internal/24_09_23_14_13_36_737/.certora_sources/.pre_autofinders.2 version
+Libraries to add = []
+
+building file certora/harnesses/PositionManagerHarness.sol
+Running cmd solc -o ".certora_internal/24_09_23_14_13_36_737/.certora_config/PositionManagerHarness.sol_3/" --overwrite --allow-paths ".",.,"lib/v4-core","lib/v4-core/lib/openzeppelin-contracts","lib/permit2","lib/v4-core/lib/solmate" --standard-json
+stdout, stderr = .certora_internal/24_09_23_14_13_36_737/.certora_config/PositionManagerHarness.sol_3.standard.stdout.json, .certora_internal/24_09_23_14_13_36_737/.certora_config/PositionManagerHarness.sol_3.standard.stderr.json
+Exitcode 0
+Solc run solc -o ".certora_internal/24_09_23_14_13_36_737/.certora_config/PositionManagerHarness.sol_3/" --overwrite --allow-paths ".",.,"lib/v4-core","lib/v4-core/lib/openzeppelin-contracts","lib/permit2","lib/v4-core/lib/solmate" --standard-json time: 0.0687
+reading standard json data from .certora_internal/24_09_23_14_13_36_737/.certora_config/PositionManagerHarness.sol_3.standard.stdout.json
+build failed
