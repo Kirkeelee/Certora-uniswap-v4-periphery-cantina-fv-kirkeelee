@@ -1,0 +1,13 @@
+{
+    "topics": [
+        {
+            "name": "type_check",
+            "messages": [
+                {
+                    "message": "Error in spec file (V4Router.spec:84:4): Syntax error: unexpected token near `rule`",
+                    "location": []
+                }
+            ]
+        }
+    ]
+}

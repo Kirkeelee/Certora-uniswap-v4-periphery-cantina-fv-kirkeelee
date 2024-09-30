@@ -1,0 +1,29 @@
+{
+    "topics": [
+        {
+            "name": "type_check",
+            "messages": [
+                {
+                    "message": "Error in spec file (PoolManager.spec:114:41): Syntax error: unexpected token near `,`",
+                    "location": []
+                },
+                {
+                    "message": "Error in spec file (PoolManager.spec:118:43): Syntax error: unexpected token near `,`",
+                    "location": []
+                },
+                {
+                    "message": "Error in spec file (PoolManager.spec:120:43): Syntax error: unexpected token near `,`",
+                    "location": []
+                },
+                {
+                    "message": "Error in spec file (PoolManager.spec:124:42): Syntax error: unexpected token near `,`",
+                    "location": []
+                },
+                {
+                    "message": "Error in spec file (PoolManager.spec:127:42): Syntax error: unexpected token near `,`",
+                    "location": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+Saving last configuration file to .certora_internal/24_09_25_12_55_36_892/run.conf
+You are using certora-cli version 7.14.2; however, version 7.14.3 is available. It is recommended to upgrade by running: pip install certora-cli --upgrade
+or
+pip3 install certora-cli --upgrade
+There is no TAC file. Going to script EVMVerifier/certoraBuild.py to main_with_args()
+Creating dir /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_25_12_55_36_892/.certora_config
+In /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/PositionManager.spec, found the imports: [('./setup/SafeTransferLibCVL.spec', '1:1'), ('./setup/Deltas.spec', '2:2'), ('./setup/EIP712.spec', '3:2'), ('./setup/PoolManager.spec', '4:2')]
+In /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/setup/SafeTransferLibCVL.spec, found the imports: [('../ERC20/erc20cvl.spec', '1:1')]
+In /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/ERC20/erc20cvl.spec, found the imports: []
+In /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/setup/Deltas.spec, found the imports: [('Conversions.spec', '3:2')]
+In /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/setup/Conversions.spec, found the imports: []
+In /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/setup/EIP712.spec, found the imports: []
+In /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/setup/PoolManager.spec, found the imports: [('./Deltas.spec', '3:2'), ('./PoolManagerBase.spec', '4:2'), ('../ERC20/erc20cvl.spec', '5:2')]
+In /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/setup/Deltas.spec, found the imports: [('Conversions.spec', '3:2')]
+In /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/setup/Conversions.spec, found the imports: []
+In /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/setup/PoolManagerBase.spec, found the imports: []
+In /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/ERC20/erc20cvl.spec, found the imports: []
+copying spec file /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/certora/specs/PositionManager.spec to /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_25_12_55_36_892/.certora_sources/.0_PositionManager.spec.spec
+writing /home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_25_12_55_36_892/.certora_verify.json
+running ['java', '-jar', '/home/zemmli/.local/lib/python3.12/site-packages/certora_jars/Typechecker.jar', '-buildDirectory', '/home/zemmli/Certora-uniswap-v4-periphery-cantina-fv-kirkeelee/.certora_internal/24_09_25_12_55_36_892']
+Failed to compile spec files:
+[main] ERROR ALWAYS - Found errors in certora/specs/PositionManager.spec:
+[main] ERROR ALWAYS - Error in spec file (PositionManager.spec:308:12): Syntax error: unexpected token near `lowerTickBefore`
+[main] ERROR ALWAYS - Error in spec file (PositionManager.spec:312:12): Syntax error: unexpected token near `lowerTickAfter`
+build failed
