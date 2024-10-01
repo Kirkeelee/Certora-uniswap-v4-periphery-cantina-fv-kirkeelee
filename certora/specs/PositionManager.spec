@@ -35,6 +35,7 @@ methods {
 use builtin rule sanity;
 
 definition max_unt256() returns mathint = 2^255 - 1;
+definition addressZero() returns address = 0x0000000000000000000000000000000000000000;
 
 //  adding positive liquidity results in currency delta change for PositionManager
 rule increaseLiquidityDecreasesBalances(env e) {
@@ -316,4 +317,65 @@ rule TickConsistency (env e, method f, calldataarg args, uint256 tokenId) {
 
     assert lowerTickAfter < upperTickAfter;
 }
+
+rule BalanceUpdateAfterIncreaseLiquidity(env e) {
+    uint256 tokenId;
+    uint256 liquidity;
+    uint128 amount0Max;
+    uint128 amount1Max;
+    bytes hookData;
+    
+    PositionManagerHarness.PoolKey poolKey; PositionManagerHarness.PositionInfo info;
+    
+    (poolKey, info) = getPoolAndPositionInfo(tokenId);
+    
+    uint256 balance0Before = balanceOfCVL(poolKey.currency0, currentContract);
+    uint256 balance1Before = balanceOfCVL(poolKey.currency1, currentContract);
+    
+    increaseLiquidity(e, tokenId, liquidity, amount0Max, amount1Max, hookData);
+    
+    uint256 balance0After = balanceOfCVL(poolKey.currency0, currentContract);
+    uint256 balance1After = balanceOfCVL(poolKey.currency1, currentContract);
+    
+    assert balance0After <= balance0Before + amount0Max; // Check expected balance change
+    assert balance1After <= balance1Before + amount1Max; // Check expected balance change
+}
+
+rule LiquidityInValidRange(env e, method f, calldataarg args, uint256 tokenId)  filtered {
+    f -> f.contract == currentContract} {
+    mathint liquidityBefore = getPositionLiquidity(e, tokenId);
+    require liquidityBefore >= 0;
+
+    f(e, args);
+    
+    mathint liquidityAfter = getPositionLiquidity(e, tokenId);
+    
+    // Ensure liquidity remains within reasonable bounds
+    assert liquidityAfter >= 0 && liquidityAfter <= max_unt256();
+}
+
+
+rule TokenOwnershipTransfer(env e) {
+    uint256 tokenId;
+    address originalOwner = ownerOf(e, tokenId);
+    address newOwner;
+
+    transferFrom(e, originalOwner, newOwner, tokenId);
+
+    address updatedOwner = ownerOf(e, tokenId);
+
+    assert updatedOwner == newOwner;
+}
+
+rule NoDoubleBurn(env e, uint256 tokenId) {
+    uint128 amount0Min; uint128 amount1Min; bytes hookData;
+
+    burnPosition(e, tokenId, amount0Min, amount1Min, hookData);
+    
+    // Attempting to burn again should revert
+    burnPosition@withrevert(e, tokenId, amount0Min, amount1Min, hookData);
+    
+    assert lastReverted;
+}
+
 
